@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Payoo Mobile App</title>
+  </head>
+  <body
+    class="bg-[#f4f5f7] h-[100vh] flex flex-col justify-center items-center"
+  >
+    <div
+      class="h-[130px] w-[300px] bg-[url(./assets/bg.png)] bg-cover flex justify-center items-center"
+    >
+      <img src="./assets/Group.png" alt="" />
+    </div>
+
+    <form class="bg-white rounded-2xl p-5 w-[350px]">
+      <div>
+        <label for=""> Mobile Number</label> <br />
+        <input
+          id="mobile-number"
+          type="text"
+          placeholder="Enter your Mobile number"
+          class="input mt-3 mb-5"
+        />
+        <br />
+        <label class="mt-5" for="">4 Digit Pin</label>
+        <label class="input validator mt-3">
+          <svg
+            class="h-[1em] opacity-50"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <g
+              stroke-linejoin="round"
+              stroke-linecap="round"
+              stroke-width="2.5"
+              fill="none"
+              stroke="currentColor"
+            >
+              <path
+                d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+              ></path>
+              <circle cx="16.5" cy="7.5" r=".5" fill="currentColor"></circle>
+            </g>
+          </svg>
+          <input
+            id="pin-number"
+            type="password"
+            required
+            placeholder="Password"
+            minlength="8"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+            title="Must be more than 8 characters, including number, lowercase letter, uppercase letter"
+          />
+        </label>
+        <!-- <p class="validator-hint hidden">
+          Must be more than 4 characters, including
+          <br />At least one number <br />At least one lowercase letter <br />At
+          least one uppercase letter
+        </p> -->
+        <br />
+        <button id="btn-click" class="btn btn-primary w-full mt-3 rounded-3xl">
+          Primary
+        </button>
+      </div>
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
