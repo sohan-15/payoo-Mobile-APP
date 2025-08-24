@@ -57,7 +57,7 @@
         <div class="min-h-[200px] mx-auto grid grid-cols-3 gap-4">
           <div
             id="addmoney-button"
-            class="border-2 pt-3 rounded-xl border-gray-200 text-center"
+            class="transition-transform duration-200 form-btn border-2 pt-3 rounded-xl border-gray-400 text-center"
           >
             <img class="mx-auto p-3" src="./assets/wallet1.png" alt="" />
             <h1>Add Money</h1>
@@ -65,7 +65,7 @@
 
           <div
             id="CashOut-button"
-            class="border-2 p-3 rounded-xl border-gray-200 text-center"
+            class="transition-transform duration-200 form-btn border-2 p-3 rounded-xl border-gray-400 text-center"
           >
             <img class="p-3 mx-auto" src="./assets/send1.png" alt="" />
             <h1>CashOut</h1>
@@ -73,7 +73,7 @@
 
           <div
             id="TransferMoney-button"
-            class="border-2 p-3 rounded-xl border-gray-200 text-center"
+            class="transition-transform duration-200 form-btn border-2 p-3 rounded-xl border-gray-400 text-center"
           >
             <img class="p-3 mx-auto" src="./assets/money1.png" alt="" />
             <h1>Transfer Money</h1>
@@ -81,18 +81,24 @@
 
           <div
             id="GetBonus-button"
-            class="border-2 p-3 rounded-xl border-gray-200 text-center"
+            class="transition-transform duration-200 form-btn border-2 p-3 rounded-xl border-gray-400 text-center"
           >
             <img class="p-3 mx-auto" src="./assets/bonus1.png" alt="" />
             <h1>Get Bonus</h1>
           </div>
 
-          <div class="border-2 border-gray-200 pt-1.5 rounded-xl text-center">
+          <div
+            id="payBill-button"
+            class="transition-transform duration-200 form-btn border-2 border-gray-400 pt-1.5 rounded-xl text-center"
+          >
             <img class="mx-auto p-3" src="./assets/purse1.png" alt="" />
             <h1>Pay Bill</h1>
           </div>
 
-          <div class="border-2 p-3 rounded-xl border-gray-200 text-center">
+          <div
+            id="Transactions-button"
+            class="transition-transform duration-200 form-btn border-2 p-3 rounded-xl border-gray-400 text-center"
+          >
             <img
               class="p-3 mx-auto w-10 h-10"
               src="./assets/transaction1.png"
@@ -170,7 +176,7 @@
           </div>
         </form>
       </div>
-      <!-- hello -->
+      <!-- cash out -->
       <div class="hidden" id="Cashout-parent">
         <h1 class="font-bold text-[25px]">Cash out</h1>
         <form class="mt-7">
@@ -209,6 +215,64 @@
             </button>
           </div>
         </form>
+      </div>
+      <!-- tansfer Money -->
+      <div id="transferMoney" class="hidden">
+        <h1>transfer money</h1>
+      </div>
+      <!-- Get Bonous -->
+      <div id="GetBonous" class="hidden"><h1>Get Bonous</h1></div>
+      <!-- Pay bill -->
+      <div id="PayBill" class="hidden"><h1>Pay bill</h1></div>
+      <!-- Transactions -->
+      <div id="Transactions" class="hidden">
+        <div class="flex justify-between">
+          <div><h1>Transactions History</h1></div>
+          <div><button>View All</button></div>
+        </div>
+        <div id="transaction-container"></div>
+        <!-- <div class="mt-6  p-3  border-2 border-gray-200 rounded-10 shadow-sm">
+          <di class="flex items-center">
+            <div>
+              <img
+                class=" w-10 h-10 border-2 border-gray-100 bg-white "
+                src="./assets/wallet1.png"
+                alt=""
+              />
+            </div>
+            <div class="ml-4">
+              <h1>Bank Deposit</h1>
+              <h1>Today 01:44 AM</h1>
+            </div>
+          </div> -->
+        <!-- <div class="mt-6  p-3  border-2 border-gray-200 rounded-10 shadow-sm">
+          <di class="flex items-center">
+            <div>
+              <img
+                class=" w-10 h-10 border-2 border-gray-100 bg-white "
+                src="./assets/wallet1.png"
+                alt=""
+              />
+            </div>
+            <div class="ml-4">
+              <h1>Bank Deposit</h1>
+              <h1>Today 01:44 AM</h1>
+            </div>
+          </div>
+        <div class="mt-6  p-3  border-2 border-gray-200 rounded-10 shadow-sm">
+          <di class="flex items-center">
+            <div>
+              <img
+                class=" w-10 h-10 border-2 border-gray-100 bg-white "
+                src="./assets/wallet1.png"
+                alt=""
+              />
+            </div>
+            <div class="ml-4">
+              <h1>Bank Deposit</h1>
+              <h1>Today 01:44 AM</h1>
+            </div>
+          </div> -->
       </div>
     </section>
 
