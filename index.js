@@ -15,8 +15,23 @@ document
       mobileNumbervalueConverted === mobileNumber &&
       pinNumberValueConverted === pinNumber
     ) {
-      window.location.href = "./main.html";
+      window.location.href = "./pageThree.html";
     } else {
-      alert("Somethig is wrong..... Try Again");
+      window.location.href = "./error.html";
     }
   });
+const buttons = document.querySelectorAll(".hoverBtn");
+
+buttons.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    //   btn.classList.remove("bg-blue-500");
+    btn.classList.add("bg-green-600");
+
+    btn.classList.add(
+      "hover:scale-110",
+      "transform",
+      "transition",
+      "duration-300"
+    );
+  });
+});

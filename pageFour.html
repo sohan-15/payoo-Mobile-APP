@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+  </head>
+  <body class="bg-[#f4f5f7] h-[100vh] max-w-lg mx-auto mt-10">
+    <nav
+      class="flex justify-between items-center min-h-[50px] border-b-1 border-gray-400"
+    >
+      <div class="flex items-center">
+        <div><img class="h-[50px]" src="./assets/Group.png" alt="" /></div>
+        <div>
+          <h2 class="font-bold text-[20px] pl-3">
+            $
+            <span id="AvailableBalance" class="font-bold text-[20px]"
+              >45000</span
+            >
+          </h2>
+          <div><p class="text-[#08080880]">Available Balance</p></div>
+        </div>
+      </div>
+
+      <div>
+        <button class="text-[#08080880]">
+          <i
+            class="fa-solid fa-arrow-right-from-bracket rotate-180 text-gray-700 mr-1"
+          ></i
+          >Log out
+        </button>
+      </div>
+    </nav>
+    <section class="mt-12">
+      <h1 class="font-bold text-[30px]">🔥 Welcome to Payooo!</h1>
+      <p class="mt-5 text-[#08080880]">
+        Enjoy easy and convenient financial services with us. Cashout charge is
+        low and
+      </p>
+    </section>
+    <section class="mt-10 rounded-b-xl">
+      <div class="min-h-[200px] mx-auto grid grid-cols-3 gap-4">
+        <div class="border-2 pt-3 rounded-xl border-gray-200 text-center">
+          <img class="mx-auto p-3" src="./assets/wallet1.png" alt="" />
+          <h1>Add Money</h1>
+        </div>
+
+        <div class="border-2 p-3 rounded-xl border-gray-200 text-center">
+          <img class="p-3 mx-auto" src="./assets/send1.png" alt="" />
+          <h1>CashOut</h1>
+        </div>
+
+        <div class="border-2 p-3 rounded-xl border-gray-200 text-center">
+          <img class="p-3 mx-auto" src="./assets/money1.png" alt="" />
+          <h1>Transfer Money</h1>
+        </div>
+
+        <div class="border-2 p-3 rounded-xl border-gray-200 text-center">
+          <img class="p-3 mx-auto" src="./assets/bonus1.png" alt="" />
+          <h1>Get Bonus</h1>
+        </div>
+
+        <div class="border-2 border-gray-200 pt-1.5 rounded-xl text-center">
+          <img class="mx-auto p-3" src="./assets/purse1.png" alt="" />
+          <h1>Pay Bill</h1>
+        </div>
+
+        <div class="border-2 p-3 rounded-xl border-gray-200 text-center">
+          <img
+            class="p-3 mx-auto w-10 h-10"
+            src="./assets/transaction1.png"
+            alt=""
+          />
+          <h1>Transactions</h1>
+        </div>
+      </div>
+    </section>
+    <section class="mt-10">
+      <div>
+        <div>
+          <h1 class="font-bold text-[25px]">Cash out</h1>
+          <form class="mt-7">
+            <div class="mt-3">
+              <div>
+                <label class="font-bold" for="">Agent Number</label>
+                <br />
+                <input
+                  id="AccountNumber"
+                  type="text"
+                  placeholder="Enter 11 Digit Number"
+                  class="input w-full mt-3 mb-5"
+                />
+              </div>
+              <div>
+                <label class="font-bold" for="">Amount</label> <br />
+                <input
+                  id="AddAmount"
+                  type="text"
+                  placeholder="Add Amount to withdraw"
+                  class="input w-full mt-3 mb-5"
+                />
+              </div>
+              <div>
+                <label class="font-bold" for="">Pin Number</label> <br />
+                <input
+                  id="AddPin"
+                  type="text"
+                  placeholder="Enter 4 digit pin number"
+                  class="input w-full mt-3 mb-5"
+                />
+              </div>
+              <button
+                id="addMoneyBTn"
+                class="hoverBtn text-[25px] btn btn-primary w-full p-7 rounded-3xl"
+              >
+                <span class="text-white"> Withdraw Money</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="./pageThree.js"></script>
+  </body>
+</html>
